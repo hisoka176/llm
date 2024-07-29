@@ -9,7 +9,7 @@ app = FastAPI()
 moonshot = LLMModel()
 
 
-@app.get("/")
+@app.get("/v1/")
 def read_item(question: str):
     inputs = indicator_template.format(question=question)
     print(inputs)
