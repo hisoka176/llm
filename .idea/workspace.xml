@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8d4340d-d8d0-4d73-b689-8dc84afae544" name="变更" comment="初始化">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +148,7 @@
       <updated>1721975396114</updated>
       <workItem from="1721975399439" duration="11954000" />
       <workItem from="1722173443058" duration="5840000" />
-      <workItem from="1722217325906" duration="2867000" />
+      <workItem from="1722217325906" duration="4026000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1722233614752</created>
@@ -157,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1722233614752</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="初始化">
+      <created>1722234242403</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722234242403</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
