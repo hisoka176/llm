@@ -1,0 +1,21 @@
+{
+  "query": {
+    "multi_match": {
+      "query": "3gc 详细 流量",
+      "fields": [
+        "tablename_ltks^3.0",
+        "tablecomment_ltks^1.5",
+        "business_ltks^0.5",
+        "tabledesc_ltks^1.0"
+      ],
+      "type": "best_fields",
+      "operator": "OR",
+      "slop": 0,
+      "prefix_length": 0,
+      "max_expansions": 50,
+      "minimum_should_match": "55%",
+      "zeros_terms_query": "NONE",
+      "auto_generate_synonyms_phrase_query": true
+    }
+  }
+}

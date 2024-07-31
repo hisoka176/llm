@@ -13,10 +13,10 @@ class LLMModel(object):
             base_url="https://api.moonshot.cn/v1",
         )
 
-    def chat(self, query, model='moonshot-v1-32k'):
+    def chat(self, prompt, model='moonshot-v1-32k'):
         self.history.append({
             "role": "user",
-            "content": query
+            "content": prompt
         })
         completion = self.client.chat.completions.create(
             model=model,

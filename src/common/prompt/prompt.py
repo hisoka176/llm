@@ -1,3 +1,4 @@
+main_hive_table_context = '''
 ==== hive表:adm.adm_anaflw_app_device_visit_di ====
 device_id string '设备id'
 app_key string 'App的标识, appkey'
@@ -27,4 +28,11 @@ device_type string '启动用户分类：1-唤醒仅启，2-PUSH仅启，3-主�
 visits_num bigint '访次数'
 valid_visits_flag string '浏览有效页面标记，1-是0-否'
 click_flag string '有点击行为标记，1-是0-否'
+dt string '分区字段,日期'
 ====
+'''
+prompt_template = '''
+你现在是一个hive sql的专家，给你一些数据表的结构，以及想要查询的指标名称，你从中挑选有用的数据表，给出对应的sql逻辑，并解释原因
+上下文：{context}
+问题：{question}
+'''
