@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8d4340d-d8d0-4d73-b689-8dc84afae544" name="变更" comment="初始化">
-      <change afterPath="$PROJECT_DIR$/src/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/offline/build_index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/offline/elasticsearch-spark-30_2.12-8.11.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/offline/spark-excel_2.12-3.4.1_0.20.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/prompt/prompt2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/prompt/prompt3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/mapping_v2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/query_parser.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/search.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/search_recent.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/search_v1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/temp.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test_base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test_query_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test_recall.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_bak.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/biflow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/build_prompt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/llm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chat_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/llm/moonshot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/prompt/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/prompt/prompt.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prompt/prompt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/prompt/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/qp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/offline/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/qp/querys.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/qp/test_querys.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/offline/question.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/index/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/index/es/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/query_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/index/es/build.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/index/es/dsl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/index/es/hive.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/index/es/hive_mapping.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/hive_mapping.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/index/es/mapping.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/mapping.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/index/search.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/index/test_search.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/recall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/hive_table.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/test_hive_table.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/query.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test_available_llm_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test_llm_model.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +217,7 @@
       <workItem from="1723013999715" duration="3000" />
       <workItem from="1723014475465" duration="15614000" />
       <workItem from="1723079796171" duration="256000" />
-      <workItem from="1723080242958" duration="2608000" />
+      <workItem from="1723080242958" duration="2954000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1722233614752</created>
@@ -306,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1722254356532</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="初始化">
+      <created>1723083753035</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723083753035</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
