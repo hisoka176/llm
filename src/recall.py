@@ -116,7 +116,7 @@ class MultiESRecall(Recall):
         if len(table_info['table_names']) < 1:
             return ""
         field_dsl = {
-            "_source": ["name", "comment"],
+            "_source": ["name", "desc"],
             "query": {
                 "bool": {
                     "must": [
@@ -148,7 +148,7 @@ class MultiESRecall(Recall):
         result = self.client.search(index=self.index_name, body=field_dsl)
         if result['hits']['total']['value'] > 0:
             result = result['hits']['hits']
-            field_names = [f"{res['_source']['name']} {res['_source']['comment']}" for res in result]
+            field_names = [f"{res['_source']['name']} {res['_source']['desc']}" for res in result]
         else:
             field_names = []
 
