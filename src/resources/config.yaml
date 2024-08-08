@@ -1,15 +1,5 @@
-llm:
-  moonshot:
-
-    api-key: 'sk-1CXkvPbfEazTm8OlmRAfhW7ysz1awy1YXa5ECM4bimVp4Fa1'
-querys:
-  - 用户的次日留存
-  - 用户的三日留存率
-  - 用户的7日留存率
-  - 去重用户的次日留存率
-  - 每日新增用户
-  - 新增用户的次留多少
-  - 每日新增线索量多少
-  - 排水后的新增线索多少？
-  - 每日关注数
-  - push用户的每日互动
+flow:
+  query_parser: 'query_parser'
+  recall: 'es_recall'
+  build_prompt: 'hive_prompt'
+  chat: 'kimi'

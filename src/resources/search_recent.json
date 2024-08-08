@@ -1,0 +1,45 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "bool": {
+            "should": [
+              {
+                "nested": {
+                  "path": "columns_nst",
+                  "query": {
+                    "bool": {
+                      "must": [
+                        {
+                          "match": {
+                            "columns_nst.desc_tks": "消费"
+                          }
+                        },
+                        {
+                          "term": {
+                            "columns_nst.category": "维度"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "multi_match": {
+                  "query": "消费",
+                  "fields": [
+                    "tablecomment_tks^0.8",
+                    "tabledesc_tks^1.2"
+                  ],
+                  "type": "best_fields"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

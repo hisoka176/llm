@@ -1,0 +1,29 @@
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "nested": {
+            "path": "columns_nst",
+            "query": {
+              "match": {
+                "columns_nst.desc_tks": "{question}"
+              }
+            }
+          }
+        },
+        {
+          "multi_match": {
+            "query": "{question}",
+            "fields": [
+              "tablecomment_tks^0.8",
+              "tabledesc_tks^1.2"
+            ],
+            "operator": "or",
+            "type": "best_fields"
+          }
+        }
+      ]
+    }
+  }
+}

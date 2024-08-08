@@ -1,0 +1,31 @@
+{
+  _source: [
+    "tablename"
+  ],
+  query: {
+    bool: {
+      must: [
+        {
+          bool: {
+            should: [
+              {
+                multi_match: {
+                  query: "['主', '软', 'dau']",
+                  fields: [
+                    "tablecomment_tks^0.8",
+                    "tabledesc_tks^1.2",
+                    "alias_tks^0.8",
+                    "comment_tks^0.8",
+                    "desc_tks^1.2"
+                  ],
+                  operator: "or",
+                  type: "most_fields"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

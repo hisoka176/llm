@@ -1,0 +1,27 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "bool": {
+            "should": [
+              {
+                "multi_match": {
+                  "query": "主 软件",
+                  "fields": [
+                    "tablecomment_tks^0.8",
+                    "tabledesc_tks^1.2",
+                    "alias_tks^0.8",
+                    "comment_tks^0.8"
+                  ],
+                  "operator": "or",
+                  "type": "best_fields"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
