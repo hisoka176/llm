@@ -139,7 +139,8 @@ class MultiESRecall(Recall):
                                 "type": "most_fields"
                             }
                         }
-                    ]
+                    ],
+                    "minimum_should_match": 1
                 }
             }
         }
