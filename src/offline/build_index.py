@@ -10,12 +10,21 @@ from pyspark.sql import SparkSession, functions as F, DataFrame
 from pyspark.sql.functions import udf
 from pyspark.sql.types import StringType
 
+from src.base import root_path
 
-def cutwords(text):
-    if not text:
+stop_words = set()
+with open('../resources/stopwords.txt') as f:
+    for line in f:
+        line = line.rstrip('\n').rstrip('\r')
+        stop_words.add(line)
+print('stopword:', len(stop_words))
+
+
+def cutwords(question):
+    if question is None:
         return ''
-    words = jieba.cut(text, cut_all=True)
-    words = [word for word in words if word]
+    jieba.load_userdict('../resources/query_parser_offline/words.txt')
+    words = [word for word in jieba.cut(question, cut_all=True) if word not in stop_words and len(word) > 1]
     return ' '.join(words)
 
 
@@ -43,8 +52,8 @@ def load_filepaths(ss: SparkSession, filepaths: List[str], sheet_names: List[str
         .withColumn('comment', F.lower(F.col('字段中文名'))) \
         .withColumn('alias', F.lower(F.col('字段别名'))) \
         .withColumn('category', F.col('类型')) \
-        .withColumn('desc', F.lower(F.col('指标/枚举'))) \
-        .withColumn('caculation', F.col('计算方式'))
+        .withColumn('desc', F.lower(F.col('指标/枚举')))
+    # .withColumn('caculation', F.col('计算方式'))
 
     data.registerTempTable('temp')
     sql = f'''
@@ -63,8 +72,7 @@ def load_filepaths(ss: SparkSession, filepaths: List[str], sheet_names: List[str
         cutwords(alias) as alias_tks,
         category, 
         desc, 
-        cutwords(desc) as desc_tks, 
-        caculation as caculation
+        cutwords(desc) as desc_tks
     from temp
 
     '''

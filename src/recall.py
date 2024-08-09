@@ -89,7 +89,8 @@ class MultiESRecall(Recall):
                                             "type": "most_fields"
                                         }
                                     }
-                                ]
+                                ],
+                                "minimum_should_match": 1
                             }
                         }
                     ]
@@ -116,7 +117,7 @@ class MultiESRecall(Recall):
         if len(table_info['table_names']) < 1:
             return ""
         field_dsl = {
-            "_source": ["name", "desc"],
+            "_source": ["name", "comment", "desc"],
             "query": {
                 "bool": {
                     "must": [
@@ -148,7 +149,9 @@ class MultiESRecall(Recall):
         result = self.client.search(index=self.index_name, body=field_dsl)
         if result['hits']['total']['value'] > 0:
             result = result['hits']['hits']
-            field_names = [f"{res['_source']['name']} {res['_source']['desc']}" for res in result]
+            field_names = [f"{res['_source']['name']}##注释:{res['_source']['comment']}##描述:{res['_source']['desc']}" for
+                           res
+                           in result]
         else:
             field_names = []
 

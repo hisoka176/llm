@@ -17,7 +17,11 @@ class Flow(object):
     chat_model: ChatModel = None
 
     def __new__(cls, *args, **kwargs):
-        cls.query_parser_handler = SQLQueryParser(filepath=os.path.join(root_path, 'resources/query_parser.json'))
+        path1 = os.path.join(root_path, 'resources/query_parser.json')
+        path2 = os.path.join(root_path, 'resources/query_parser_offline/query_extend.yaml')
+        path3 = os.path.join(root_path, 'resources/query_parser_offline/query_entity.yaml')
+        path4 = os.path.join(root_path, 'resources/query_parser_offline/words.txt')
+        cls.query_parser_handler = SQLQueryParser(path1, path2, path3, path4)
         cls.recall_handler = MultiESRecall(index_name='bi_sql',
                                            filepath=os.path.join(root_path, 'resources/search.json'))
         cls.build_prompt_handler = MultiESBuildPrompt()

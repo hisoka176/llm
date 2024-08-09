@@ -1,0 +1,28 @@
+三端:
+  - app端
+  - pc端
+  - m端
+四端:
+  - app端
+  - 小程序
+  - pc端
+  - m端
+3gc:
+  - pgc
+  - ogc
+  - ugc
+互动:
+  - 点赞
+  - 评论
+  - 关注
+  - 收藏
+  - 转发
+主软:
+  - 主软件
+  - auto
+来源:
+  - 渠道
+  - channel
+  - channel_name
+app:
+  - app端
