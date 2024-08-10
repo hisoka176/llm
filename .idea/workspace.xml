@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8d4340d-d8d0-4d73-b689-8dc84afae544" name="变更" comment="初始化">
-      <change afterPath="$PROJECT_DIR$/src/resources/query_parser_offline/hive_table.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/b.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chat_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chat_model.py" afterDir="false" />
-    </list>
+    <list default="true" id="c8d4340d-d8d0-4d73-b689-8dc84afae544" name="变更" comment="初始化" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -237,7 +231,7 @@
       <workItem from="1723079796171" duration="256000" />
       <workItem from="1723080242958" duration="16724000" />
       <workItem from="1723166798340" duration="24448000" />
-      <workItem from="1723298622309" duration="801000" />
+      <workItem from="1723298622309" duration="1024000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1722233614752</created>
@@ -330,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1723206462963</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="初始化">
+      <created>1723301671093</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1723301671093</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +364,7 @@
     <SUITE FILE_PATH="coverage/llm$test_llm_api.coverage" NAME="test_llm_api 覆盖结果" MODIFIED="1721995905604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/llm$recall.coverage" NAME="recall 覆盖结果" MODIFIED="1723082246135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/llm$build.coverage" NAME="build 覆盖结果" MODIFIED="1722339334095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/index/es" />
-    <SUITE FILE_PATH="coverage/llm$chat_model.coverage" NAME="chat_model 覆盖结果" MODIFIED="1723301592973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/llm$chat_model.coverage" NAME="chat_model 覆盖结果" MODIFIED="1723301627719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/llm$query_entity.coverage" NAME="query_entity 覆盖结果" MODIFIED="1723186083687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/resources/query_parser_offline" />
     <SUITE FILE_PATH="coverage/llm$querys.coverage" NAME="querys 覆盖结果" MODIFIED="1722329795510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/qp" />
     <SUITE FILE_PATH="coverage/llm$config.coverage" NAME="config 覆盖结果" MODIFIED="1722868905705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
