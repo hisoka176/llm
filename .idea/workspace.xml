@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8d4340d-d8d0-4d73-b689-8dc84afae544" name="变更" comment="初始化">
-      <change afterPath="$PROJECT_DIR$/src/a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/query_parser_utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/query_parser_utils/query_entity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/query_parser_utils/query_extend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/query_parser_offline/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/query_parser_offline/category.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/query_parser_offline/query_entity.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/query_parser_offline/query_extend.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/query_parser_offline/query_normalize.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/stopwords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/query_parser_offline/hive_table.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/b.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chat_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chat_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offline/build_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/offline/build_index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offline/问表知识库-0731.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/offline/问表知识库-0731.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/prompt/prompt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/prompt/prompt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/query_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/query_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recall.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/recall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/hive_mapping.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/mapping_v2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/query.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/query_parser.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/query_parser.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/temp.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +63,7 @@
       <recent name="$PROJECT_DIR$/src/prompt" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.build_index">
+  <component name="RunManager" selected="Python.chat_model">
     <configuration name="a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="llm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,6 +100,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/offline/build_index.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="chat_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="llm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chat_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,28 +174,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="query_extend" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="llm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/query_parser" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/query_parser/query_extend.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="query_parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="llm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -217,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.chat_model" />
         <item itemvalue="Python.build_index" />
         <item itemvalue="Python.query_parser" />
         <item itemvalue="Python.a" />
         <item itemvalue="Python.query_entity" />
-        <item itemvalue="Python.query_extend" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +236,8 @@
       <workItem from="1723014475465" duration="15614000" />
       <workItem from="1723079796171" duration="256000" />
       <workItem from="1723080242958" duration="16724000" />
-      <workItem from="1723166798340" duration="20767000" />
+      <workItem from="1723166798340" duration="24448000" />
+      <workItem from="1723298622309" duration="801000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1722233614752</created>
@@ -341,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1723088925411</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="初始化">
+      <created>1723206462962</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723206462963</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,12 +357,13 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/llm$search.coverage" NAME="search 覆盖结果" MODIFIED="1722343157337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dao/index" />
     <SUITE FILE_PATH="coverage/llm$query_extend.coverage" NAME="query_extend 覆盖结果" MODIFIED="1723181111112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/query_parser" />
-    <SUITE FILE_PATH="coverage/llm$build_index.coverage" NAME="build_index 覆盖结果" MODIFIED="1723198483608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/offline" />
+    <SUITE FILE_PATH="coverage/llm$build_index.coverage" NAME="build_index 覆盖结果" MODIFIED="1723206588882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/offline" />
     <SUITE FILE_PATH="coverage/llm$biflow.coverage" NAME="biflow 覆盖结果" MODIFIED="1722179706637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/llm$test_llm_model.coverage" NAME="test_llm_model 覆盖结果" MODIFIED="1721996300072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/llm$test_llm_api.coverage" NAME="test_llm_api 覆盖结果" MODIFIED="1721995905604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/llm$recall.coverage" NAME="recall 覆盖结果" MODIFIED="1723082246135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/llm$build.coverage" NAME="build 覆盖结果" MODIFIED="1722339334095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/index/es" />
+    <SUITE FILE_PATH="coverage/llm$chat_model.coverage" NAME="chat_model 覆盖结果" MODIFIED="1723301592973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/llm$query_entity.coverage" NAME="query_entity 覆盖结果" MODIFIED="1723186083687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/resources/query_parser_offline" />
     <SUITE FILE_PATH="coverage/llm$querys.coverage" NAME="querys 覆盖结果" MODIFIED="1722329795510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/qp" />
     <SUITE FILE_PATH="coverage/llm$config.coverage" NAME="config 覆盖结果" MODIFIED="1722868905705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
@@ -387,6 +377,6 @@
     <SUITE FILE_PATH="coverage/llm$.coverage" NAME=" 覆盖结果" MODIFIED="1723083096429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/llm$base.coverage" NAME="base 覆盖结果" MODIFIED="1723082735829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/llm$a.coverage" NAME="a 覆盖结果" MODIFIED="1723192754667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/offline" />
-    <SUITE FILE_PATH="coverage/llm$main.coverage" NAME="main 覆盖结果" MODIFIED="1723197797685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/llm$main.coverage" NAME="main 覆盖结果" MODIFIED="1723206701586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,0 +1,12 @@
+你是一个sql专家，在一个数据库中，有如下几张表：
+table表：adm_anaflw_app_device_visit_di， 作用：统计整个软件，即注软件的的流量数据，其中枚举值：app_key代表该app内的细分部分，auto_android代表主软件Android端,auto_iphone代表主软件iOS端,che_ios代表二手车iOS端,che_android代表二手车Android端,price_android代表报价Android端,ics_android代表爱车商Android端,ics_ios代表爱车商iOS端,price_ios代表报价iOS端,autospeed_android代表极速版Android端,explore_auto_iphone代表主软件探索版iOS端,autospeed_ios代表极速版iOS端,auto_ipad代表主软件ipad端,wz_android代表违章查询Android端,auto_harmony代表主软件harmony端即主软鸿蒙端,wz_ios代表违章查询iOS端,testdrive_ios代表试驾仪iOS端,vixrapp_ios代表销冠神器iOS端,vixrapp_android代表销冠神器Android端
+table表：adm_anaflw_app_device_start_di， 作用：该模型表为app启动日志聚合模型，设备号颗粒度（即设备号+appkey唯一），为独立访客打上各类标记，如：新用户标识、排水标识、软件名称、不同天数的留存回访、用户分类等，非常方便上层报表数据统计而且查询高效，适合统计MAU、DAU、留存率等指标。同样包括了app_key
+table表：gdm_02_app_device_start_dtl_di， 作用：app端启动日志明细，访客在每个访次内打开app时上报一条启动日志,包括用户设备的操作系统、地理信息、启动进入的软件栏目
+table表：gdm_02_app_device_start_his_da， 作用：gdm_02_app_device_start_dtl_di device启动历史快照，包括 Appkey、渠道、设备id、首次启动日期、首次启动时间、软件id、软件名称
+table表：gdm_02_app_event_log_nopv_di， 作用：app事件日志点击流明细-不包含pv事，包括消息唯一标识，设备标识符-统一大写 会话ID 已废弃 服务器时间戳/服务端生成 起始时间、点击时间 结束时间 上传时间 省份编码 城市编码 IP地址 注册用户id 设备品牌 设备机型 网络连接类型 APP标识 APP版本号 首次访问（安装）渠道 末次访问（安装）渠道 sdk版本号 区分pv、普通事件、曝光日志 标识点击来源 标识pv来源 区分是app日志还是内嵌H5日志 事件id 事件名称 事件状态 小时 基础数据扩展字段 原自定义参数 车系id 车型id 内容id 车系id列表 argv[typeid]等信息
+table表：gdm_02_app_wakeup_device_di app_key， 作用：app唤起用户明细数据，包括设备号 访次id 创建时间 开始时间 埋点位置 位置 是否新用户 是否首次唤起 字段已废弃 序号 1天前有访问 2天前有访问 3天前有访问 4天前有访问 5天前有访问 6天前有访问 7天前有访问 次日留存 3日留存 7日留存 14日留存 30日留存 2日留存 15日留存 rta拉活标识，1-是 0-否 rta策略id rta策略名称 供应商渠道编码-rta 供应商渠道名称-rta 人群包id等信息
+table表：gdm_02_outweb_basic_di 作用：外部流量表， 统计从外部应用，比如小程序、小程序、快应用、轻应用等外部app的流量数据
+=====
+对于给定的问题，希望你从众多的数据数据表中，挑选1~2张数据表返回, 并解释原因
+问题：小程序的dau
+
